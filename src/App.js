@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { useState } from "react";
+import Navbar from "./Components/Navbar";
+import Repolist from "./Components/Repolist";
+import { Pagination } from 'antd';
+import 'antd/dist/antd.css';
+const App = ()=>{
+  const [currentpage,setcurrentpage] = useState(1);
+  return <div>
+  <Navbar/>
+  <Repolist/>
+  <div style={{display:"flex",
+  width:"100vw",
+  justifyContent: 'center',
+}}>
+  <Pagination defaultCurrent={currentpage} total={50} style={{
+  marginBottom:"20px",
+  marginTop:"10px",
+}}/>
+  </div>
+</div>
 }
-
 export default App;

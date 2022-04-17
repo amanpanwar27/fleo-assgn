@@ -1,0 +1,27 @@
+#Container{
+    width: 100vw;
+    height: 80px;
+    background-color: #000000;
+    position: fixed;
+    z-index: 100;
+}
+#Container img{
+    width: 50px;
+    height: 50px;
+    margin-left:20px;
+    margin-top:13px;
+}
+#Container input{
+    outline: none;
+    border: none;
+    border:1px solid lightgrey;
+    background-color: #000000;
+    color:#F6F8FA;
+    margin-left:25px;
+    height: 30px;
+    width: 250px;
+    padding-left: 10px;
+    border-radius: 3px;
+    position: relative;
+    top:10px;
+}

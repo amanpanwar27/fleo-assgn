@@ -1,0 +1,92 @@
+.RepoContainer{
+    border-top: 1px solid lightgrey;
+    padding-left:20px;
+    padding-right: 20px;
+    width: 95vw;
+    margin: auto;
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+.RepoDetails{
+    margin-top:10px;
+    width: 100%;
+    height: auto;
+    margin-left:20px;
+    background-color: white;
+    border:1px solid lightgrey;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    gap: 27%;
+}
+.RepoDetails div{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.RepoDetails div span{
+    margin-left:10px;
+    position: relative;
+    white-space: nowrap;
+}
+.RepoDetails div span:first-child{
+font-weight: bold;
+}
+#others{
+    margin-top:20px;
+    background-color: #F3F4F6;
+    width: 200px;
+    height: 60px;
+    border:1px solid lightgrey;
+    border-radius: 10px;
+}
+#others span img{
+    width: 17px;
+    height: 17px;
+    /* margin-top: 7px; */
+    margin-left:5px;
+}
+#others span{
+    overflow-y: hidden;
+    position: relative;
+    bottom: 2px;
+    top:3px;
+    
+}
+#others span span{
+    margin-left: 10px;
+}
+.UserDetails{
+    margin-top:10px;
+    overflow-y:hidden ;
+}
+.UserDetails img{
+    width: 35px;
+    height: 35px;
+    overflow-y: hidden;
+    border-radius: 50%;
+    position: relative;
+    top:3px;
+    cursor: pointer;
+
+}
+.UserDetails span{
+    position: relative;
+    left:10px;
+    bottom:8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#desc{
+    font-size:14px;
+    white-space: normal;
+    overflow-y:hidden ;
+}
+#name{
+    position: relative;
+    top:5px;
+}
+#lang{
+    font-style: italic;
+    font-weight: 100;
+}
